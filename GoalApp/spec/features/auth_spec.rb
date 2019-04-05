@@ -60,6 +60,6 @@ feature 'logging out' do
   scenario 'doesn\'t show username on the homepage after logout' do
     user = User.find_by(username: user_attr.username)
     expect(page).to_not have_content(user.username)
-  end
+  end    
 
 end
